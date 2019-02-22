@@ -2,6 +2,7 @@
 <manifest>
   <remote name="rock64" fetch="https://github.com/rock64-android/" />
   <remote name="ayufan" fetch="https://github.com/ayufan-rock64/" />
+  <remote name="chinper" fetch="https://github.com/chinper/" />
 
   <!-- ayufan's integration -->
   <project path="vendor/ayufan/rockchip" name="vendor-ayufan-rockchip" remote="ayufan" revision="master" groups="pdk" />
@@ -13,8 +14,9 @@
       <copyfile src="mkimage.sh" dest="mkimage.sh"/>
       <copyfile src="javaenv.sh" dest="javaenv.sh"/>
   </project>
-  <project path="device/rockchip/rk3328" name="device-rockchip-rk3328" remote="ayufan" revision="nougat">
+  <project path="device/rockchip/rk3328" name="device-rockchip-rk3328" remote="chinper" revision="nougat">
 	  <copyfile src="build.sh" dest="build.sh"/>
+	  <copyfile src="device.mk" dest="device.mk"/>
   </project>
   <project path="rkst" name="rkst" remote="rock64" revision="thzy_develop"/>
   <project path="vendor/rockchip/common" name="vendor-rockchip-common" remote="ayufan" revision="master"/>
