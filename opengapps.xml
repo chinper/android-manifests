@@ -9,7 +9,7 @@
   <noproject path="vendor/opengapps/sources/all" name="all.git" clone-depth="1" revision="master" remote="opengapps_gitlab" />
   <noproject path="vendor/opengapps/sources/arm" name="arm.git" clone-depth="1" revision="master" remote="opengapps_gitlab" />
   <noproject path="vendor/opengapps/sources/arm64" name="arm64.git" clone-depth="1" revision="master" remote="opengapps_gitlab" />
-  <noproject path="vendor/opengapps" name="opengapps" sync-s="true" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/opengapps" name="opengapps" sync-s="true" revision="master" remote="opengapps" />
   
   <project path="vendor/ayufan/apps" name="vendor-ayufan-apps" remote="ayufan-pine64" revision="master" groups="pdk" />
 </manifest>
